@@ -9,6 +9,8 @@ from datetime import datetime
 from datetime import timedelta
 import plotly.graph_objects as go
 from prophet import Prophet
+from prophet.plot import plot_components_plotly
+from prophet.plot import plot_plotly
 
 with open('data.json', 'r') as _json:
     data_string = _json.read()
@@ -41,8 +43,6 @@ prever = model.predict(data_futuro)
 
 st.dataframe(prever)
 
-from prophet.plot import plot_components_plotly
-from prophet.plot import plot_plotly
 plot_components_plotly(model, prever)
 
 st.title(f"Valores de {crypto_selected}")
