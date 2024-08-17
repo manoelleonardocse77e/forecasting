@@ -22,5 +22,7 @@
 <li>REMEMBER TO INSTALL ALL IMPORTS</li>
 
 #How to use
+<p>Make sure to properly install each libraries. Debug and run, then type streamlit run "file_name".py.</p>
+<p>If your python are not globaly installed, python -m streamlit run "file_name".py could work</p>
 
-#
+<p>IN DEVELOPMENT</p>
